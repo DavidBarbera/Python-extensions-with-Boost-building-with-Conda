@@ -1,0 +1,34 @@
+package:
+  name: cdev
+  version: "1"
+
+source:
+  path: ../
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - cmake
+    - requests
+    - boost ==1.60.0 [unix]
+    - boost ==1.56.0 [win and py27]
+    - boost ==1.56.0 [win and py34]
+    - boost ==1.59.0 [win and py35]
+    - python
+
+  run:
+    - boost ==1.60.0 [unix]
+    - boost ==1.56.0 [win and py27]
+    - boost ==1.56.0 [win and py34]
+    - boost ==1.59.0 [win and py35]
+    - python
+
+#test:
+#  imports:
+#    - hello
+
+about:
+  home: http://rdkit.org
+  license: BSD
